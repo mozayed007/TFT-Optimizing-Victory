@@ -1,72 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markdown Tabs</title>
-
-  <!-- Libraries -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script id="MathJax-script" async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-  <!-- Styles -->
-  <style>
-    body {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-    }
-
-    .tabs {
-      display: flex;
-      margin-bottom: 20px;
-    }
-
-    .tab {
-      cursor: pointer;
-      padding: 10px;
-      background-color: #555;
-      color: #fff;
-      margin-right: 5px;
-    }
-
-    .tab:hover {
-      background-color: #777;
-    }
-
-    #content-container {
-      margin-top: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="tabs">
-    <div class="tab" onclick="loadContent('tftinfoset10tft1.md')">Tab 1</div>
-    <div class="tab" onclick="loadContent('mathmodeltft2.md')">Tab 2</div>
-  </div>
-  <div id="content-container"></div>
-
-  <script>
-    function loadContent(url) {
-      fetch('docs/' + url)
-        .then(response => response.text())
-        .then(markdownText => {
-          const markdownContainer = document.createElement('div');
-          markdownContainer.innerHTML = marked(markdownText);
-          document.getElementById('content-container').innerHTML = '';
-          document.getElementById('content-container').appendChild(markdownContainer);
-          MathJax.typeset();
+    <title>TFT-Optimizer-Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$','$']]
+            }
         });
-    }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+</head>
+<body>
+    <div class="tabs">
+        <ul id="tab-list">
+            <!-- Tabs will be dynamically created here -->
+        </ul>
+        <div id="tab-content">
+            <!-- Tab content will be dynamically loaded here -->
+        </div>
+    </div>
 
-    // Load the initial content
-    loadContent('tftinfoset10tft1.md');  // Corrected file name
-  </script>
+    <script>
+        $(document).ready(function() {
+            $.getJSON('https://api.github.com/repos/USERNAME/REPOSITORY/contents/docs', function(files) {
+                files.forEach(function(file) {
+                    if (file.name.endsWith('.md')) {
+                        let tabName = file.name.substring(0, file.name.length - 3);
+                        $('#tab-list').append('<li><a href="#' + tabName + '">' + tabName + '</a></li>');
+                        $.get(file.download_url, function(data) {
+                            $('#tab-content').append('<div id="' + tabName + '">' + data + '</div>');
+                        }, 'text');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
