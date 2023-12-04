@@ -8,11 +8,11 @@ Apply linear and constrained optimization techniques to create a sophisticated m
 
 ### Decision Variables:
 
-- \(Gold_{level\_up}\): Amount of gold allocated for leveling up.
-- \(Gold_{roll}\): Amount of gold allocated for rolling.
-- \(Gold_{interest}\): Gold interest earned based on savings.
-- \(Gold_{streak}\): Gold earned from win/loss streaks.
-- \(Gold_{saved}\): Total gold saved.
+- $Gold_{level\_up}$: Amount of gold allocated for leveling up.
+- $Gold_{roll}$: Amount of gold allocated for rolling.
+- $Gold_{interest}$: Gold interest earned based on savings.
+- $Gold_{streak}$: Gold earned from win/loss streaks.
+- $Gold_{saved}$: Total gold saved.
 
 ### Objective Function:
 
