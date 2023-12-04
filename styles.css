@@ -1,0 +1,53 @@
+/* styles.css */
+
+.light-theme, .light-theme #tab-list, .light-theme #tab-list li a {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-theme, .dark-theme #tab-list, .dark-theme #tab-list li a {
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#tab-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    background-color: #f1f1f1;
+}
+
+#tab-list li {
+    float: left;
+}
+
+#tab-list li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#tab-list li a:hover {
+    background-color: #ddd;
+}
+
+#tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

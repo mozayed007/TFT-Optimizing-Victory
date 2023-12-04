@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>TFT-Optimizer-Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
@@ -13,7 +15,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 </head>
-<body>
+<body class="light-theme">
+    <button id="theme-toggle">Toggle theme</button>
     <div class="tabs">
         <ul id="tab-list">
             <!-- Tabs will be dynamically created here -->
@@ -25,16 +28,23 @@
 
     <script>
         $(document).ready(function() {
-            $.getJSON('https://api.github.com/repos/USERNAME/REPOSITORY/contents/docs', function(files) {
+            var converter = new showdown.Converter({tables: true, strikethrough: true, tasklists: true});
+            $.getJSON('https://api.github.com/repos/mozayed007/TFT-OPTIMIZING-VICTORY/contents/docs', function(files) {
                 files.forEach(function(file) {
                     if (file.name.endsWith('.md')) {
                         let tabName = file.name.substring(0, file.name.length - 3);
                         $('#tab-list').append('<li><a href="#' + tabName + '">' + tabName + '</a></li>');
                         $.get(file.download_url, function(data) {
-                            $('#tab-content').append('<div id="' + tabName + '">' + data + '</div>');
+                            var html = converter.makeHtml(data);
+                            $('#tab-content').append('<div id="' + tabName + '">' + html + '</div>');
+                            MathJax.Hub.Queue(["Typeset",MathJax.Hub, tabName]);
                         }, 'text');
                     }
                 });
+            });
+
+            $('#theme-toggle').click(function() {
+                $('body').toggleClass('dark-theme light-theme');
             });
         });
     </script>
