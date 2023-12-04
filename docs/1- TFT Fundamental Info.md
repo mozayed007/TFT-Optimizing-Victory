@@ -35,124 +35,224 @@
 
 ### Bag Sizes (Pool)
 
-|1-Cost  | 2-Cost  | 3-Cost  | 4-Cost  | 5-Cost  |
+| 1-Cost | 2-Cost | 3-Cost | 4-Cost | 5-Cost |
 | ------ | ------ | ------ | ------ | ------ |
-| 22     | 20     | 17     | 10     |  9     |
+| 22     | 20     | 17     | 10     | 9      |
+
 ### Stage Damage
 
-|1       | 2      | 3      | 4      | 5      | 6      |
-| ------ | ------ | ------ | ------ | ------ | ------ |
-| 0      | 3      |  5     | 7      |  9     | 15     |
+| 1    | 2    | 3    | 4    | 5    | 6    |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| 0    | 3    | 5    | 7    | 9    | 15   |
 
 ## 2) Set 10 (Season 10) Economy Plans
 
-### Plan 1: Tier 1 and Tier 2 3-Starred Carries
+# Teamfight Tactics Set 10 Updates and Economy Plans
 
-#### Early to Mid-Game (Rounds 1-6):
+## Leveling Guide
 
-- **Stage 1-1 to 2-3:**
-  - Focus on 1 and 2-cost units.
-  - Lvl to 4 at 2-1 if u have a 2 star champ or a good starter angle.
-  - Consider light rolling for key 1 or 2-cost units.
-  - Build a strong economy.
+**General Tips:**
 
-- **Stage 2-4 to 3-2:**
-  - Transition to core composition.
-  - Level to 5 using automatic XP to increase the chances of finding Tier 1 and Tier 2 units.
-  - Begin light rolling for 3-star carry units of Tier 1 and Tier 2.
-  - Manage gold efficiently to maintain interest.
+- Save gold if you need to.
+- Roll at a specific level and you have not reached that level yet.
+- You are healthy.
+- You have a strong board that is already upgraded.
+- Roll if you need to preserve your Health.
+- Complete a lot of pairs.
+- Need units at a specific cost and you are at the optimal level to roll for them.
+- Need a new Headliner.
+- Level up if you need to add an extra unit to activate a key trait (you will need to level up no matter what the cost).
+- Roll to obtain units at a specific cost (you will need to have enough gold to roll after spending gold on leveling up).
+- Have too much extra gold and you might as well buy XP.
 
-#### Mid-Game (Rounds 7-9):
+**Color Key:**
 
-- **Stage 3-3 to 4-5:**
-  - Level to 6 or 7 using automatic XP cautiously, considering Tier 1 and Tier 2 champion rates.
-  - Continue rolling for 3-star carry units of Tier 1 and Tier 2.
-  - Adjust rolling based on interest breakpoints and current champion pool percentages.
-  - Manage gold efficiently to maximize interest.
+- G: Usually level at this stage.
 
-#### Late Game (Rounds 10+):
+- Y: Situationally level at this stage.
 
-- **Stage 4-5 and onward:**
-  - Complete core composition.
-  - Level to 8 or 9, considering the reduced chances of Tier 1 and Tier 2 champions.
-  - Continue rolling for 3-star carry units of Tier 1 and Tier 2.
-  - Use excess gold to level and find higher-cost units.
-  - Adjust rolling based on interest breakpoints and champion pool percentages.
+- R: Rarely level at this stage.
+
+  ---
+
+  
+
+### I) Standard
+
+**Level 4 – Stage 2-1, 2-2, 2-3**
+
+- Do not Roll
+
+**Level 5 – Stage 2-3, 2-5, 2-7, 3-1**
+
+- Do not Roll
+
+**Level 6 (Have 20-30g+ after leveling) – Stage 3-1, 3-2, 3-5**
+
+- Generally do not Roll. Only Roll on 3-2 if you have a lot of pairs OR if you are low health and some pairs. Can be anywhere from 10-30g (roll more if you have lower health). Sell your 1 cost Headliner to find a 2 or 3 cost Headliner if you do roll.
+
+**Level 7 (Have 30g+ after leveling) – Stage 3-5, 4-1, 4-2**
+
+- Typically roll a little bit after reaching level 7 because you need to stabilize your board if you have pairs or if you are low hp. If you are healthy, maybe 10 gold. If not, roll until stable (20-40g+). If you already have upgrades and have good health, Fast 8 instead.
+
+**Level 8 (Have 30g+ after leveling) – Stage 4-2, 4-5, 5-1, 5-2**
+
+- Usually roll a lot of gold (30-50g+) on level 8 unless your board is already 2* or if you are 80hp+. Sell your 3 or lower cost Headliner to find a 4 cost Headliner in most cases.
+
+**Level 9 – Stage 5-1, 5-2, 5-5, 6-1, 6-2, 6-5**
+
+- Roll most of your gold when you hit level 9 unless you are doing something very specific.
+
+**Level 10 – Stage 6+**
+
+- Go to Level 10 if you have all upgrades already and can’t realistically get any good 3* units OR if you need to activate a crucial trait breakpoint.
+
+  ---
+
+  
+
+### II) Fast 8 (similar to Standard)
+
+**Level 4 – Stage 2-1, 2-2, 2-3**
+
+- Do not Roll
+
+**Level 5 – Stage 2-3, 2-5, 2-7, 3-1**
+
+- Do not Roll
+
+**Level 6 (Have 30g+ after leveling) – Stage 3-1, 3-2, 3-5**
+
+- Do not Roll
+
+**Level 7 (Have 30g+ after leveling) – Stage 3-5, 4-1, 4-2**
+
+- Do not Roll
+
+**Level 8 (Have 30g+ after leveling) – Stage 4-2, 4-5, 5-1**
+
+- Sell your Headliner and Roll all your gold
+
+**Level 9 – Stage 5-1, 5-2, 5-5, 6-1, 6-2, 6-5**
+
+- Roll most of your gold when you hit level 9 unless you are doing something very specific.
+
+**Level 10 – Stage 6+**
+
+- Go to Level 10 if you have all upgrades already and can’t realistically get any good 3* units OR if you need to activate a crucial trait breakpoint.
+
+  ---
+
+  
+
+### III) 1-Cost Reroll Leveling
+
+**Level 4 – Stage 2-3**
+
+- At Stage 3-1 while you are still level 4, roll down to 30g. If you have 7+ copies of the unit you want after rolling to 30g, roll another 10. If you have 8 copies after that, then roll another 10 again. You can also consider Hyper Rolling (rolling all your gold) if you are low health and desperate.
+
+**Level 5 (50+ gold) – Stage 3-2**
+
+- Slow Roll at level 5. Slow Rolling is rolling down to 50g every turn while buying all the units you want. Think about ‘all inning’ (rolling all your gold) or ‘fishing’ (rolling gold 10g at a time to see if you get an additional copy of your unit) when you have 6+ copies of the most important unit to save HP. At Stage 4-1, roll until you hit your unit(s).
+
+**Level 6 – Stage 3-x, 4-x**
+
+- Typically after you get your crucial 3*s, you spend all your money on leveling for most of the game to add in additional traits.
+
+**Level 7 – Stage 4-x, 5-x**
+
+**Level 8 – Stage 5-x, 6-x**
+
+**Level 9 – Stage 6-x**
+
+**Level 10 – Stage 7-x**
 
 ---
 
-This refined plan leverages automatic leveling to enhance the chances of finding Tier 1 and Tier 2 units in the early game, allowing for more efficient rolling for 3-star carries. Adaptations can still be made based on in-game circumstances and personal preferences.
 
-### Plan 2: Tier 3 3-Starred Carries
 
-#### Early to Mid-Game (Rounds 1-6):
+### IV) 2-Cost Reroll Leveling
 
-- **Stage 1-1 to 2-3:**
-  - Prioritize mid-cost units for a flexible composition.
-  - Consider light rolling for essential units.
-  - Lvl to 4 at 2-1 if u have a 2 star champ or a good starter angle.
-  - Build a strong economy.
-- **Stage 2-4 to 3-2:**
-  - Transition to a core composition.
-  - Lvl 5 2-3 and Lvl 6 3-2 to increase Tier 3 champion rates.
-  - Begin rolling for 2-star carry units of Tier 3 till 50 gold.
-  - Manage gold efficiently to maintain interest.
+**Level 4 – Stage 2-1, 2-3**
 
-#### Mid-Game (Rounds 7-9):
+- Do not Roll
 
-- **Stage 3-3 to 3-5:**
-  -  Level to 7 at 3-5 to maximize Tier 3 champion rates.
-  - Continue rolling to 32 low roll for 3-star carry units of Tier 3.
-  - Adjust rolling based on interest breakpoints, current champion pool percentages, and your current level.
-  - Be mindful of your economy, considering the gold needed for rolling and leveling.
+**Level 5 – Stage 2-5, 3-1, 3-2**
 
-#### Late Game (Rounds 10+):
+- Do not Roll
 
-- **Stage 4-3 and onward:**
-  - Complete your core composition.
-  - Level cautiously to 8 or 9, understanding the decreased chances of finding Tier 3 champions at these levels.
-  - Continue rolling for 3-star carry units of Tier 3, prioritizing essential upgrades.
-  - Use excess gold to level and find higher-cost units, considering the lower Tier 3 champion rates.
-  - Adjust rolling based on interest breakpoints and champion pool percentages.
+**Level 6 (50+ gold) – Stage 3-2, 3-5**
+
+- Slow Roll at level 6. Slow Rolling is rolling down to 50g every turn while buying all the units you want. Think about ‘all inning’ (rolling all your gold) or ‘fishing’ (rolling gold 10g at a time to see if you get an additional copy of your unit) when you have 6+ copies of the most important unit to save HP.
+
+**Level 7 – Stage 4-x, 5-x**
+
+- Typically after you get your crucial 3*s, you spend all your money on leveling for most of the game to add in additional traits.
+
+**Level 8 – Stage 5-x, 6-x**
+
+**Level 9 – Stage 6-x**
+
+**Level 10 – Stage 7-x**
 
 ---
 
-This refined plan aligns with your strategy of hitting Level 6 at 3-2 and Level 7 at 3-5 to increase the chances of finding Tier 3 champions, especially 3-cost units. The adjustments aim to optimize the rolling and leveling strategy based on the specific breakpoints for the appearance of Tier 3 units.
 
 
-### Plan 3: Tier 4 and Tier 5 3-Starred Carries
+### V) 3-Cost Reroll Leveling
 
-#### Early to Mid-Game (Rounds 1-6):
+**Level 4 – Stage 2-1, 2-2, 2-3**
 
-- **Stage 1-1 to 2-3:**
-  - Prioritize economy and light rolling for key units.
-  - Lvl to 4 at 2-1 if u have a 2 star champ or a good starter angle.
-  - Build a strong economy.
+- Do not Roll
 
-- **Stage 2-4 to 3-2:**
-  - Transition to a core composition.
-  - Lvl to 5 at 2-3 and Lvl to 6 at 3-2 to increase Tier 3 champion rates.
-  - Stabilize your comp rolling to 50.
-  - Manage gold efficiently to maintain interest.
+**Level 5 – Stage 2-3, 2-5, 2-7, 3-1**
 
-#### Mid-Game (Rounds 7-9):
+- Do not Roll
 
-- **Stage 3-3 to 3-5:**
-  -  Level to 7 at 3-5 to maximize Tier 3 champion rates.
-  - Adjust rolling based on interest breakpoints, current champion pool percentages, and your current level.
-  - Be mindful of your economy, considering the gold needed for rolling and leveling.
-  - Stabilize with what Tier 4 and 5 champions suitable 
+**Level 6 – Stage 3-1, 3-2, 3-5**
 
-#### Late Game (Rounds 10+):
+- Sometimes you roll at Stage 3-2 to stabilize your board to hit 2* 3 cost units. Sometimes you look for a 3 cost Headliner here too. Do not be afraid to roll to 0 sometimes in desperate situations.
 
-- **Stage 4-3 and onward:**
-  - Complete your core composition with Tier 4 and Tier 5 champions.
-  - Level to 8 or 9 cautiously, understanding the decreased chances of finding Tier 3 champions at these levels.
-  - **Level to 10 when ready to maximize Tier 4 and Tier 5 champion rates.**
-  - Continue rolling for 3-star carry units of Tier 4 and Tier 5, prioritizing essential upgrades.
-  - Use excess gold to level and find higher-cost units, considering the lower Tier 3 champion rates.
-  - Adjust rolling based on interest breakpoints and champion pool percentages.
+**Level 7 (50+ gold) – Stage 3-5, 4-1, 4-2**
+
+- Stabilize by rolling until you get several 2*s of crucial units. After that, econ to 50g+ and then Slow Roll at this level. If you are not getting a lot of copies (4 or less) of your desired units, go Level 8 instead.
+
+**Level 8 – Stage 5-x, 6-x**
+
+**Level 9 – Stage 6-x**
+
+**Level 10 – Stage 7-x**
 
 ---
 
-This refined plan now specifies the focus on Tier 4 (4-cost carries) and Tier 5 (5-cost carries) for 3-star upgrades in the late game. Adjustments can still be made based on in-game circumstances and your specific strategy.
+
+
+### Champion Roll Odds and Pool Size
+
+| Level | 1 Cost (22 units) | 2 Cost (20 units) | 3 Cost (17 units) | 4 Cost (10 units) | 5 Cost (9 units) |
+| ----- | ----------------- | ----------------- | ----------------- | ----------------- | ---------------- |
+| 1     | 100%              | 0%                | 0%                | 0%                | 0%               |
+| 2     | 100%              | 0%                | 0%                | 0%                | 0%               |
+| 3     | 75%               | 25%               | 0%                | 0%                | 0%               |
+| 4     | 55%               | 30%               | 15%               | 0%                | 0%               |
+| 5     | 45%               | 33%               | 20%               | 2%                | 0%               |
+| 6     | 30%               | 40%               | 25%               | 5%                | 0%               |
+| 7     | 19%               | 35%               | 35%               | 10%               | 1%               |
+| 8     | 18%               | 25%               | 36%               | 18%               | 3%               |
+| 9     | 10%               | 20%               | 25%               | 35%               | 10%              |
+| 10    | 5%                | 10%               | 20%               | 40%               | 25%              |
+
+### Headliner Odds
+
+| Level | 1 Cost | 2 Cost | 3 Cost | 4 Cost | 5 Cost |
+| ----- | ------ | ------ | ------ | ------ | ------ |
+| 1     | 100%   | 0%     | 0%     | 0%     | 0%     |
+| 2     | 100%   | 0%     | 0%     | 0%     | 0%     |
+| 3     | 100%   | 0%     | 0%     | 0%     | 0%     |
+| 4     | 80%    | 20%    | 0%     | 0%     | 0%     |
+| 5     | 30%    | 70%    | 0%     | 0%     | 0%     |
+| 6     | 0%     | 75%    | 25%    | 0%     | 0%     |
+| 7     | 0%     | 40%    | 60%    | 0%     | 0%     |
+| 8     | 0%     | 0%     | 70%    | 30%    | 0%     |
+| 9     | 0%     | 0%     | 0%     | 90%    | 10%    |
+| 10    | 0%     | 0%     | 0%     | 30%    | 70%    |

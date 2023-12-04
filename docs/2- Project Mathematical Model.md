@@ -1,31 +1,48 @@
-# Application of Linear and Constrained Optimization in TFT Leveling Guide
+# Teamfight Tactics Optimization Project
 
-## Objective Function (Linear Programming):
-Maximize Board Strength: Formulate an objective function that maximizes the overall strength of your board. This includes considering the star level of champions, synergy bonuses, and gold efficiency.
+## Objective:
 
-## Decision Variables (Linear Programming):
-Gold Allocation: Define decision variables for the amount of gold to be allocated between leveling up and rolling for champions.
+Apply linear and constrained optimization techniques to create a sophisticated model for the Teamfight Tactics (TFT) leveling guide, considering dynamic factors such as gold management, health preservation, champion pool percentages, stage/round details, gold interest, and win/loss streaks.
 
-## Constraints (Constrained Optimization):
-**Gold Constraint:**
-Limit the total gold expenditure based on the available gold. This ensures that the strategy is feasible within the current financial constraints.
+## Mathematical Model:
 
-**Health Preservation Constraint:**
-Set a constraint to maintain a minimum level of health. This ensures that the optimization accounts for health preservation while making leveling and rolling decisions.
+### Decision Variables:
 
-**Champion Pool Constraint:**
-Ensure that the optimization considers the available champion pool percentages at each level. This prevents overcommitting to specific units and maintains a balanced champion pool.
+- \(Gold_{level\_up}\): Amount of gold allocated for leveling up.
+- \(Gold_{roll}\): Amount of gold allocated for rolling.
+- \(Gold_{interest}\): Gold interest earned based on savings.
+- \(Gold_{streak}\): Gold earned from win/loss streaks.
+- \(Gold_{saved}\): Total gold saved.
 
-## Formulation Example:
-**Maximize:**
-\[ \text{Board Strength} = \sum_{i} (\text{Star Level}_i \times \text{Synergy Bonus}_i) \]
+### Objective Function:
 
-**Decision Variables:**
-\[ \text{Gold}_{\text{level up}}, \text{Gold}_{\text{roll}} \]
+Maximize overall board strength considering champion star levels, synergy bonuses, and gold efficiency.
 
-**Constraints:**
-\[ \text{Total Gold} = \text{Gold}_{\text{level up}} + \text{Gold}_{\text{roll}} \leq \text{Available Gold} \]
-\[ \text{Health} \geq \text{Minimum Health} \]
-\[ \text{Champion Pool Percentages are satisfied.} \]
+\[Board\_Strength = \sum_{i} (Star\_Level_i \times Synergy\_Bonus_i)\]
 
-By combining Linear Programming and Constrained Optimization, you create a more sophisticated model that considers both the overall strength of the board and specific constraints related to resources, health, and champion pool management. Adjust the formulation based on the specific details and dynamics of your TFT game.
+### Constraints:
+
+1. **Gold Constraint:**
+   \[Gold_{level\_up} + Gold_{roll} + Gold_{saved} + Gold_{streak} + Gold_{interest} \leq Total\_Gold_{available}\]
+
+2. **Health Preservation Constraint:**
+   \[Current\_Health \geq Minimum\_Health\]
+
+3. **Champion Pool Constraint:**
+   Ensure that champion pool percentages are satisfied.
+
+4. **Stage and Round Constraint:**
+   Consider dynamic constraints based on the current stage and round.
+
+5. **Gold Interest Constraint:**
+   \[Gold_{interest} = \lfloor Gold_{saved} \div 10 \rfloor\]
+
+6. **Gold Streak Constraint:**
+   Determine gold streak bonus based on win/loss streak.
+
+7. **Champion Availability Constraint:**
+   Adjust champion availability based on the current stage and round.
+
+## Implementation:
+
+Utilize Python programming to solve the linear programming problem and dynamically adjust constraints based on the evolving state of the game.
