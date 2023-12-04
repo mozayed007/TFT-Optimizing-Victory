@@ -18,15 +18,15 @@ Apply linear and constrained optimization techniques to create a sophisticated m
 
 Maximize overall board strength considering champion star levels, synergy bonuses, and gold efficiency.
 
-\[Board\_Strength = \sum_{i} (Star\_Level_i \times Synergy\_Bonus_i)\]
+$$Board\_Strength = \sum_{i} (Star\_Level_i \times Synergy\_Bonus_i)$$
 
 ### Constraints:
 
 1. **Gold Constraint:**
-    \[Gold_{level\_up} + Gold_{roll} + Gold_{saved} + Gold_{streak} + Gold_{interest} \leq Total\_Gold_{available}\]
+    $$Gold_{level\_up} + Gold_{roll} + Gold_{saved} + Gold_{streak} + Gold_{interest} \leq Total\_Gold_{available}$$
 
 2. **Health Preservation Constraint:**
-    \[Current\_Health \geq Minimum\_Health\]
+    $$Current\_Health \geq Minimum\_Health$$
 
 3. **Champion Pool Constraint:**
     Ensure that champion pool percentages are satisfied.
@@ -35,7 +35,7 @@ Maximize overall board strength considering champion star levels, synergy bonuse
     Consider dynamic constraints based on the current stage and round.
 
 5. **Gold Interest Constraint:**
-    \[Gold_{interest} = \lfloor Gold_{saved} \div 10 \rfloor\]
+    $$Gold_{interest} = \lfloor Gold_{saved} \div 10 \rfloor$$
 
 6. **Gold Streak Constraint:**
     Determine gold streak bonus based on win/loss streak.

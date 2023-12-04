@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>TFT-Optimizer-Project</title>
-   <link rel="stylesheet" type="text/css" href="styles.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-   <script>
-       MathJax = {
-           tex: {
-               inlineMath: [['$', '$'], ['\\(', '\\)']],
-               processEscapes: true
-           }
-       };
-   </script>
+  <title>TFT-Optimizer-Project</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+              processEscapes: true
+          }
+      };
+  </script>
 </head>
 <body class="light-theme">
-   <button id="theme-toggle">Toggle theme</button>
-   <div class="tabs">
-       <ul id="tab-list">
-           <!-- Tabs will be dynamically created here -->
-       </ul>
-       <div id="tab-content">
-           <!-- Tab content will be dynamically loaded here -->
-       </div>
-   </div>
+  <button id="theme-toggle">Toggle theme</button>
+  <div class="tabs">
+      <ul id="tab-list">
+          <!-- Tabs will be dynamically created here -->
+      </ul>
+      <div id="tab-content">
+          <!-- Tab content will be dynamically loaded here -->
+      </div>
+  </div>
 
-   <script>
-       $(document).ready(function() {
-           var converter = new showdown.Converter({tables: true});
-           fetch('https://api.github.com/repos/mozayed007/TFT-OPTIMIZING-VICTORY/contents/docs')
-               .then(response => response.json())
-               .then(files => {
-                  files.forEach(file => {
-                      if (file.name.endsWith('.md')) {
-                          let tabName = file.name.substring(0, file.name.length - 3);
-                          $('#tab-list').append('<li><a href="#' + tabName + '">' + tabName + '</a></li>');
-                          fetch(file.download_url)
-                              .then(response => response.text())
-                              .then(markdownText => {
-                                 var html = converter.makeHtml(markdownText);
-                                 $('#tab-content').append('<div id="' + tabName + '">' + html + '</div>');
-                                 MathJax.typeset([document.getElementById(tabName)]);
-                              });
-                      }
-                  });
-               });
+  <script>
+      $(document).ready(function() {
+          var converter = new showdown.Converter({tables: true});
+          fetch('https://api.github.com/repos/mozayed007/TFT-OPTIMIZING-VICTORY/contents/docs')
+              .then(response => response.json())
+              .then(files => {
+                files.forEach(file => {
+                    if (file.name.endsWith('.md')) {
+                        let tabName = file.name.substring(0, file.name.length - 3);
+                        $('#tab-list').append('<li><a href="#' + tabName + '">' + tabName + '</a></li>');
+                        fetch(file.download_url)
+                            .then(response => response.text())
+                            .then(markdownText => {
+                               var html = converter.makeHtml(markdownText);
+                               $('#tab-content').append('<div id="' + tabName + '">' + html + '</div>');
+                               MathJax.typeset([document.getElementById(tabName)]);
+                            });
+                    }
+                });
+              });
 
-           $('#theme-toggle').click(function() {
-               $('body').toggleClass('dark-theme light-theme');
-           });
-       });
-   </script>
+          $('#theme-toggle').click(function() {
+              $('body').toggleClass('dark-theme light-theme');
+          });
+      });
+  </script>
 </body>
 </html>
